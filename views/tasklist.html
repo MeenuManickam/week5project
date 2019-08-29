@@ -1,0 +1,36 @@
+<html>  
+    <head>
+        <link rel="stylesSheet" href="styles.css" />
+    <body>
+        <table id="t01">
+            <tr>
+                <th>
+                    Task Name
+                </th>
+                <th>
+                    Task due date
+                </th>
+                <th>
+                    Task description
+                </th>
+            </tr>
+            <tr>
+            <% for (let i=0;i<git init.length;i++) { %>
+                <tr></tr>
+               
+                    <td>
+                        <%=tasks[i].taskName %>
+                    </td>
+                    <td>
+                        <%=tasks[i].taskDueDate %>
+                    </td>
+                    <td>
+                        <%=tasks[i].taskDescription %>
+                    </td>
+                </tr>
+           <% } %>
+        </table>
+            Click <a href= "/" HERE</a> return to home page! <br  />
+            Click <a href= "/newtask.html" HERE</a> add task
+        </body>
+</html>
